@@ -52,6 +52,8 @@
 .web-glow .module-orb { background: #7C6FF7; }
 .database-glow .module-orb { background: #F5A623; }
 .framework-glow .module-orb { background: #00E5FF; }
+.ai-glow .module-orb { background: #FF2E93; }
+.cognitive-card-glow .module-orb { background: #10B981; }
 
 /* CONTENT STYLING */
 .module-head {

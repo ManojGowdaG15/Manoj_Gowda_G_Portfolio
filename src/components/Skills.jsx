@@ -21,8 +21,8 @@ export default function Skills() {
            </h2>
         </div>
 
-        {/* CORE SKILL MODULES - EXACT RESUME CATEGORIES */}
-        <div className="skill-core-grid reveal delay-1">
+         {/* CORE SKILL MODULES - EXACT RESUME CATEGORIES */}
+         <div className="skill-core-grid reveal delay-1">
            
            {/* CATEGORY 01: PROGRAMMING LANGUAGES */}
            <div className="core-module programming-glow kinetic">
@@ -39,6 +39,8 @@ export default function Skills() {
                     <span className="tag-pill">Java</span>
                     <span className="tag-pill">Python</span>
                     <span className="tag-pill">Cloud</span>
+                    <span className="tag-pill">JavaScript</span>
+                    <span className="tag-pill">TypeScript</span>
                  </div>
               </div>
            </div>
@@ -52,12 +54,15 @@ export default function Skills() {
                     <span className="module-meta">ID: WEB-ENGINE</span>
                  </div>
                  <h3 className="module-title">Web Technologies</h3>
-                 <p className="module-text">High-performance stack: HTML, CSS, JavaScript, and Core PHP.</p>
+                 <p className="module-text">High-performance stack for modern web applications.</p>
                  <div className="module-tags">
                     <span className="tag-pill">HTML5</span>
                     <span className="tag-pill">CSS3</span>
-                    <span className="tag-pill">JS</span>
                     <span className="tag-pill">PHP</span>
+                    <span className="tag-pill">React 18</span>
+                    <span className="tag-pill">Node.js</span>
+                    <span className="tag-pill">Tailwind CSS</span>
+                    <span className="tag-pill">REST APIs</span>
                  </div>
               </div>
            </div>
@@ -71,11 +76,13 @@ export default function Skills() {
                     <span className="module-meta">ID: DATA-VAULT</span>
                  </div>
                  <h3 className="module-title">Databases & Env</h3>
-                 <p className="module-text">MySQL and SQLite design via integrated XAMPP server environments.</p>
+                 <p className="module-text">Secure data storage and local server environment design.</p>
                  <div className="module-tags">
                     <span className="tag-pill">MySQL</span>
                     <span className="tag-pill">SQLite</span>
                     <span className="tag-pill">XAMPP</span>
+                    <span className="tag-pill">MongoDB</span>
+                    <span className="tag-pill">VectorDB (Pinecone)</span>
                  </div>
               </div>
            </div>
@@ -89,48 +96,66 @@ export default function Skills() {
                     <span className="module-meta">ID: DEV-ECOSYSTEM</span>
                  </div>
                  <h3 className="module-title">Frameworks & Tools</h3>
-                 <p className="module-text">Backend orchestration with Django and Git/GitHub version control.</p>
+                 <p className="module-text">Orchestration with modern frameworks and version control.</p>
                  <div className="module-tags">
                     <span className="tag-pill">Django</span>
                     <span className="tag-pill">Git</span>
                     <span className="tag-pill">GitHub</span>
+                    <span className="tag-pill">Flask</span>
+                    <span className="tag-pill">Express.js</span>
+                    <span className="tag-pill">Vite</span>
+                    <span className="tag-pill">Lucide React</span>
+                    <span className="tag-pill">JWT Auth</span>
+                    <span className="tag-pill">MERN Stack</span>
                  </div>
               </div>
            </div>
 
-        </div>
-
-        {/* 🧠 COGNITIVE MATRIX - RESUME SOFT SKILLS */}
-        <div className="cognitive-layer reveal delay-3">
-           <h4 className="cognitive-header">// COGNITIVE DOMAIN</h4>
-           <div className="cognitive-pills">
-              
-              <div className="cognitive-pioneer mint-breathe float">
-                 <Target className="cog-icon spin-slow" />
-                 <div className="cog-content">
-                    <span className="cog-title">Problem-Solving</span>
-                    <span className="cog-detail">Structural resolution and logical decomposition of architectures.</span>
+           {/* CATEGORY 05: AI & INTELLIGENCE SYSTEMS */}
+           <div className="core-module ai-glow kinetic">
+              <div className="module-orb"></div>
+              <div className="module-inner">
+                 <div className="module-head">
+                    <Brain size={22} className="module-icon" />
+                    <span className="module-meta">ID: AI-CORE</span>
+                 </div>
+                 <h3 className="module-title">AI & Intelligence Systems</h3>
+                 <p className="module-text">Advanced AI pipeline engineering — building intelligent search, semantic retrieval, and LLM-powered applications.</p>
+                 <div className="module-tags">
+                    <span className="tag-pill">RAG (Retrieval-Augmented Generation)</span>
+                    <span className="tag-pill">LangChain</span>
+                    <span className="tag-pill">Pinecone (VectorDB)</span>
+                    <span className="tag-pill">OpenAI API</span>
+                    <span className="tag-pill">Groq</span>
+                    <span className="tag-pill">FastAPI</span>
+                    <span className="tag-pill">MCP (Model Context Protocol)</span>
+                    <span className="tag-pill">Prompt Engineering</span>
                  </div>
               </div>
-
-              <div className="cognitive-pioneer violet-breathe float">
-                 <Users className="cog-icon pulse" />
-                 <div className="cog-content">
-                    <span className="cog-title">Team Collaboration</span>
-                    <span className="cog-detail">Fostering synergy within multi-functional development groups.</span>
-                 </div>
-              </div>
-
-              <div className="cognitive-pioneer amber-breathe float">
-                 <MessageSquare className="cog-icon breathe" />
-                 <div className="cog-content">
-                    <span className="cog-title">Communication</span>
-                    <span className="cog-detail">Clear technical documentation and stakeholder alignment.</span>
-                 </div>
-              </div>
-
            </div>
-        </div>
+
+           {/* CATEGORY 06: COGNITIVE DOMAIN */}
+           <div className="core-module cognitive-card-glow kinetic">
+              <div className="module-orb"></div>
+              <div className="module-inner">
+                 <div className="module-head">
+                    <Users size={22} className="module-icon" />
+                    <span className="module-meta">ID: HUMAN-CORE</span>
+                 </div>
+                 <h3 className="module-title">Cognitive Domain</h3>
+                 <p className="module-text">Structural resolution, synergistic collaboration, and functional alignment.</p>
+                 <div className="module-tags">
+                    <span className="tag-pill">Problem Solving</span>
+                    <span className="tag-pill">Team Collaboration</span>
+                    <span className="tag-pill">Communication</span>
+                    <span className="tag-pill">Project Management</span>
+                    <span className="tag-pill">Technical Documentation</span>
+                    <span className="tag-pill">Agile Teamwork</span>
+                 </div>
+              </div>
+           </div>
+
+         </div>
 
       </div>
     </section>
