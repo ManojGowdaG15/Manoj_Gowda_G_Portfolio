@@ -1,0 +1,248 @@
+/* ═══════════════════════════════════════════════ */
+/* ABOUT MASTER HERO DOSSIER V21                     */
+/* ═══════════════════════════════════════════════ */
+
+.about-archive {
+  padding: 160px 0;
+  background-color: #0b0b0b;
+}
+
+.archive-inner {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* LEFT COLUMN: THE NARRATIVE (STICKY) */
+.archive-left {
+  flex: 0 0 calc(50% - 40px);
+  position: sticky;
+  top: 140px;
+}
+
+.archive-title {
+  font-size: 2.8rem;
+  font-weight: 950;
+  color: #fff;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 48px;
+}
+
+.archive-narrative-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.archive-stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-val-huge {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 950;
+  color: var(--accent);
+  line-height: 0.8;
+}
+
+.stat-lab-huge {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: 0.25em;
+  margin-top: 10px;
+}
+
+.archive-sub-pro {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 0.25em;
+  display: flex;
+  align-items: center;
+}
+
+.archive-para-pro {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.archive-status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status-item {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.active-dot {
+  color: var(--accent);
+  animation: static-pulsate 1.5s infinite;
+}
+
+@keyframes static-pulsate {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* RIGHT COLUMN: INSTITUTIONS (ONE BY ONE) */
+.archive-right {
+  flex: 0 0 calc(50% - 40px);
+}
+
+.archive-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Base Card Style */
+.archive-card {
+  display: flex;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.5s var(--ease);
+}
+
+.archive-card:hover {
+  transform: translateX(10px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+}
+
+/* HERO DOSSIER: Vertical Layout specifically for Dr. AIT */
+.hero-dossier {
+  flex-direction: column;
+}
+
+.archive-hero-media {
+  width: 100%;
+  height: 280px;
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-img-cover {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+.padding-pro {
+  padding: 40px;
+}
+
+/* Regular Card Styling (Horizontal Split) */
+.archive-card:not(.hero-dossier) {
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+}
+
+.archive-card-media {
+  width: 140px; height: 140px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+}
+
+.archive-img-fit {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+.archive-img-fit.logo-mode {
+  object-fit: contain;
+  padding: 16px;
+}
+
+/* Colors */
+.teal-pro { border-left: 4px solid var(--accent); }
+.indigo-pro { border-left: 4px solid #7C6FF7; }
+.amber-pro { border-left: 4px solid #F5A623; }
+.charcoal-pro { border-left: 4px solid #444; }
+
+.archive-card-info {
+  flex: 1;
+}
+
+.archive-card-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 6px;
+  line-height: 1.1;
+}
+
+.archive-card-loc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.archive-card-deg {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.archive-card-status {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 50px;
+  width: fit-content;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+}
+
+.archive-card-status.active { color: var(--accent); border-color: rgba(0, 229, 160, 0.3); }
+.archive-card-status.completed { color: #888; }
+
+.archive-card-footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.archive-score-label {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1200px) {
+  .archive-inner { flex-direction: column; gap: 80px; }
+  .archive-left { position: static; width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .archive-card:not(.hero-dossier) { flex-direction: column; align-items: flex-start; text-align: left; }
+  .archive-card-media { width: 100%; height: 200px; }
+}

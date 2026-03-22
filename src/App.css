@@ -1,0 +1,85 @@
+/* ═══════════════════════════════════════════════ */
+/* PREMIUM INTERACTION STYLES                       */
+/* ═══════════════════════════════════════════════ */
+
+/* Custom Magnetic Cursor */
+.cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s var(--ease-in-out), height 0.3s var(--ease-in-out), background 0.3s var(--ease-in-out), border-color 0.3s var(--ease-in-out);
+  mix-blend-mode: difference;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0; left: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10001;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring.hover {
+  width: 70px;
+  height: 70px;
+  background: var(--accent);
+  border-color: transparent;
+  opacity: 0.15;
+}
+
+/* Hide default cursor only if on desktop */
+@media (pointer: fine) {
+  body, a, button, .clickable {
+    cursor: none !important;
+  }
+}
+
+/* Hide custom cursor on mobile */
+@media (max-width: 1024px) {
+  .cursor-ring, .cursor-dot {
+    display: none;
+  }
+  body {
+    cursor: auto !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+/* Focus */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}

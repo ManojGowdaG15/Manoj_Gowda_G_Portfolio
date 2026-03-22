@@ -1,0 +1,115 @@
+:root {
+  /* High-Performance "Refined Pro" Palette */
+  --bg-primary: #050505;
+  --bg-secondary: #0a0a0a;
+  --bg-card: rgba(15, 15, 15, 0.6);
+  
+  --accent: #00FFB2; /* Vibrant Electric Mint */
+  --accent-faint: rgba(0, 255, 178, 0.08);
+  --accent-glow: rgba(0, 255, 178, 0.3);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a5a5a5;
+  --text-muted: #6b6b6b;
+  
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  
+  --border: rgba(255, 255, 255, 0.1);
+  --glass: blur(20px) saturate(180%);
+  
+  --ease: cubic-bezier(0.16, 1, 0.3, 1); /* Ultra-smooth "Apple" ease */
+  --section-pad: clamp(100px, 12vw, 160px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* ═══════════════════════════════════════════════ */
+/* REFINED PRO UTILITIES                           */
+/* ═══════════════════════════════════════════════ */
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+  margin-bottom: 60px;
+  letter-spacing: -0.04em;
+}
+
+/* Clean Professional Cards */
+.pro-card {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  transition: all 0.5s var(--ease);
+}
+
+.pro-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 255, 178, 0.4);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s var(--ease), transform 1.2s var(--ease);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .container { padding: 0 40px; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 24px; }
+  .section-title { font-size: 2rem; }
+}
