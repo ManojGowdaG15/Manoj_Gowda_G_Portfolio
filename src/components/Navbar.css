@@ -130,6 +130,13 @@
 }
 
 @media (max-width: 600px) {
-  .navbar-stellar { top: 20px; }
-  .nav-pill-link { padding: 6px 12px; font-size: 0.6rem; }
+  .navbar-stellar { top: 16px; }
+  .nav-container-pro { padding: 0 8px; }
+  .nav-pill-wrap { padding: 2px; }
+  .nav-pill-links { gap: 0; }
+  .nav-pill-link { padding: 6px 8px; font-size: 0.55rem; letter-spacing: 0.02em; }
+}
+
+@media (max-width: 360px) {
+  .nav-pill-link { padding: 6px 6px; font-size: 0.5rem; letter-spacing: 0; }
 }
