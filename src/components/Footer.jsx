@@ -10,9 +10,9 @@ export default function Footer() {
     <footer className="footer-system">
       <div className="container">
         
-        {/* THE MASSIVE TYPOGRAPHY */}
-        <div className="footer-headline reveal">
-           <h2>MANOJ GOWDA</h2>
+        {/* THE CREATIVE TYPOGRAPHY */}
+        <div className="footer-headline">
+           <h2>Manoj Gowda G.</h2>
         </div>
         
         <div className="footer-grid">

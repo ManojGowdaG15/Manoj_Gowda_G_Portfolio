@@ -3,191 +3,273 @@
 /* ═══════════════════════════════════════════════ */
 
 .skills-core {
-  padding: 160px 0;
-  background-color: #0b0b0b;
+    padding: 50px 0;
+    background-color: #0b0b0b;
 }
 
 /* SKILL CORE GRID */
 .skill-core-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 0px;
 }
 
 .core-module {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 48px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.6s var(--ease);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s var(--ease);
 }
 
 .core-module:hover {
-  transform: translateY(-8px);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
 }
 
 /* ENERGY ORBS */
 .module-orb {
-  position: absolute;
-  top: 40px; right: 40px;
-  width: 120px; height: 120px;
-  filter: blur(60px);
-  border-radius: 50%;
-  opacity: 0.1;
-  transition: all 0.6s var(--ease);
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 120px;
+    height: 120px;
+    filter: blur(60px);
+    border-radius: 50%;
+    opacity: 0.1;
+    transition: all 0.6s var(--ease);
 }
 
 .core-module:hover .module-orb {
-  opacity: 0.3;
-  width: 160px; height: 160px;
+    opacity: 0.3;
+    width: 160px;
+    height: 160px;
 }
 
 /* CATEGORY COLORS (ORBS) */
-.programming-glow .module-orb { background: var(--accent); }
-.web-glow .module-orb { background: #7C6FF7; }
-.database-glow .module-orb { background: #F5A623; }
-.framework-glow .module-orb { background: #00E5FF; }
-.ai-glow .module-orb { background: #FF2E93; }
-.cognitive-card-glow .module-orb { background: #10B981; }
+.programming-glow .module-orb {
+    background: var(--accent);
+}
+
+.web-glow .module-orb {
+    background: #7C6FF7;
+}
+
+.database-glow .module-orb {
+    background: #F5A623;
+}
+
+.framework-glow .module-orb {
+    background: #00E5FF;
+}
+
+.ai-glow .module-orb {
+    background: #FF2E93;
+}
+
+.cognitive-card-glow .module-orb {
+    background: #10B981;
+}
 
 /* CONTENT STYLING */
 .module-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
 }
 
 .module-icon {
-  color: var(--text-muted);
+    color: var(--text-muted);
 }
 
 .module-meta {
-  font-family: var(--font-display);
-  font-size: 0.6rem;
-  font-weight: 800;
-  color: var(--text-muted);
-  letter-spacing: 0.15em;
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: var(--text-muted);
+    letter-spacing: 0.15em;
 }
 
 .module-title {
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: #fff;
-  margin-bottom: 12px;
-  line-height: 1.1;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.1;
 }
 
 .module-text {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 32px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 32px;
 }
 
 /* RESUME TAG PILLS */
 .module-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .tag-pill {
-  font-family: var(--font-display);
-  font-size: 0.65rem;
-  font-weight: 800;
-  color: #fff;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--border);
-  padding: 8px 16px;
-  border-radius: 8px;
-  letter-spacing: 0.05em;
-  transition: all 0.3s var(--ease);
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    transition: all 0.3s var(--ease);
 }
 
 .tag-pill:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* COGNITIVE LAYER (SOFT SKILLS) */
 .cognitive-layer {
-  border-top: 1px solid var(--border);
-  padding-top: 100px;
+    border-top: 1px solid var(--border);
+    padding-top: 100px;
 }
 
 .cognitive-header {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: var(--accent);
-  margin-bottom: 48px;
-  letter-spacing: 0.25em;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 48px;
+    letter-spacing: 0.25em;
 }
 
 .cognitive-pills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
 }
 
 .cognitive-pioneer {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 32px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  transition: all 0.6s var(--ease);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all 0.6s var(--ease);
 }
 
 .cognitive-pioneer:hover {
-  transform: translateY(-5px) scale(1.02);
-  background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(255, 255, 255, 0.04);
 }
 
 .cog-icon {
-  color: var(--accent);
-  margin-top: 4px;
+    color: var(--accent);
+    margin-top: 4px;
 }
 
 .cog-title {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: #fff;
-  display: block;
-  margin-bottom: 4px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #fff;
+    display: block;
+    margin-bottom: 4px;
 }
 
 .cog-detail {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
 }
 
 /* ANIMATIONS */
-.spin-slow { animation: cortex-spin 10s linear infinite; }
-.pulse { animation: cortex-pulse 2s infinite; }
-.breathe { animation: cortex-breathe 4s infinite; }
-.float { animation: cortex-float 3s infinite; }
+.spin-slow {
+    animation: cortex-spin 10s linear infinite;
+}
 
-@keyframes cortex-spin { 100% { transform: rotate(360deg); } }
-@keyframes cortex-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.6; transform: scale(1.1); } }
-@keyframes cortex-breathe { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px var(--accent)); } 50% { transform: scale(1.05); filter: drop-shadow(0 0 10px var(--accent)); } }
-@keyframes cortex-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.pulse {
+    animation: cortex-pulse 2s infinite;
+}
+
+.breathe {
+    animation: cortex-breathe 4s infinite;
+}
+
+.float {
+    animation: cortex-float 3s infinite;
+}
+
+@keyframes cortex-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cortex-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes cortex-breathe {
+
+    0%,
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0px var(--accent));
+    }
+
+    50% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 10px var(--accent));
+    }
+}
+
+@keyframes cortex-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
 
 @media (max-width: 1100px) {
-  .cognitive-pills { grid-template-columns: repeat(2, 1fr); }
+    .cognitive-pills {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 900px) {
-  .skill-core-grid { grid-template-columns: 1fr; }
-  .cognitive-pills { grid-template-columns: 1fr; }
-  .core-module { padding: 32px; }
+    .skill-core-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cognitive-pills {
+        grid-template-columns: 1fr;
+    }
+
+    .core-module {
+        padding: 32px;
+    }
 }

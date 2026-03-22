@@ -5,7 +5,7 @@ import './Projects.css';
 const projects = [
   {
     id: '01',
-    title: 'EdTech AI Search G',
+    title: 'EdTech AI Search',
     category: 'AI / RAG / Django',
     image: '/assets/project_edtech.png',
     desc: 'An IBM-vetted (IBM India) advanced AI learning companion. Revolutionizing student interaction with educational content through automated knowledge extraction using Retrieval-Augmented Generation (RAG). Features a dynamic roadmap generator and intelligent flashcard suite.',
@@ -83,43 +83,43 @@ export default function Projects() {
   return (
     <section className="projects-galleria" id="projects" ref={ref}>
       <div className="container">
-        
+
         {/* SECTION HEADER */}
         <div className="projects-header reveal">
-           <span className="section-label">THE PROJECT GALLERIA / 03</span>
-           <h2 className="section-title">
-             Verified <span className="text-gradient">Engineering Archive</span>.
-           </h2>
+          <span className="section-label">THE PROJECT GALLERIA / 03</span>
+          <h2 className="section-title">
+            Verified <span className="text-gradient">Engineering Archive</span>.
+          </h2>
         </div>
 
         {/* GALLERIA STACK */}
         <div className="galleria-stack">
-           {projects.map((project, index) => (
-             <div key={project.id} className={`galleria-card reveal delay-${index + 1}`}>
-                <div className="card-media-box">
-                   <div className="card-badge">{project.category}</div>
-                   <img src={project.image} alt={project.title} className="card-img" />
-                   <div className="card-overlay">
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="overlay-btn">
-                         <Github size={20} /> SOURCE REPOSITORY
-                      </a>
-                   </div>
+          {projects.map((project, index) => (
+            <div key={project.id} className={`galleria-card reveal delay-${index + 1}`}>
+              <div className="card-media-box">
+                <div className="card-badge">{project.category}</div>
+                <img src={project.image} alt={project.title} className="card-img" />
+                <div className="card-overlay">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="overlay-btn">
+                    <Github size={20} /> SOURCE REPOSITORY
+                  </a>
                 </div>
-                
-                <div className="card-info-box">
-                   <div className="card-head">
-                      <span className="card-id">{project.id} // VERIFIED CORE PROJECT</span>
-                      <h3 className="card-title">{project.title}</h3>
-                   </div>
-                   <p className="card-desc">{project.desc}</p>
-                   <div className="card-tags">
-                      {project.tags.map(tag => (
-                        <span key={tag} className="tag-item">{tag}</span>
-                      ))}
-                   </div>
+              </div>
+
+              <div className="card-info-box">
+                <div className="card-head">
+                  <span className="card-id">{project.id} // VERIFIED CORE PROJECT</span>
+                  <h3 className="card-title">{project.title}</h3>
                 </div>
-             </div>
-           ))}
+                <p className="card-desc">{project.desc}</p>
+                <div className="card-tags">
+                  {project.tags.map(tag => (
+                    <span key={tag} className="tag-item">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
       </div>
